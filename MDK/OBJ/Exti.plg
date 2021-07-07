@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\文档\资料\学习资料\芯片资料\MCU\stm32资料\程序\TEST\MDK\Exti.uvproj
+Project File Date:  04/27/2015
+
+<h2>Output:</h2>
+Load "E:\\文档\\资料\\学习资料\\芯片资料\\MCU\\stm32资料\\程序\\TEST\\MDK\\OBJ\\Exti.AXF" 
+Set JLink Project File to "E:\文档\资料\学习资料\芯片资料\MCU\stm32资料\程序\TEST\MDK\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100214 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.254V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+compiling usart.c...
+..\Hardware\usart\usart.c(76): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\Hardware\usart\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\Hardware\usart\usart.c:      ^
+..\Hardware\usart\usart.c(103): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+..\Hardware\usart\usart.c:                                             ^
+..\Hardware\usart\usart.c(104): error:  #20: identifier "USART_StopBits_1" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;
+..\Hardware\usart\usart.c:                                           ^
+..\Hardware\usart\usart.c(105): error:  #20: identifier "USART_Parity_No" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;
+..\Hardware\usart\usart.c:                                         ^
+..\Hardware\usart\usart.c(106): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+..\Hardware\usart\usart.c:                                                      ^
+..\Hardware\usart\usart.c(107): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Hardware\usart\usart.c:                                       ^
+..\Hardware\usart\usart.c(107): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Hardware\usart\usart.c:                                                       ^
+..\Hardware\usart\usart.c(109): warning:  #223-D: function "USART_Init" declared implicitly
+..\Hardware\usart\usart.c:       USART_Init(USART1, &USART_InitStructure);
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(112): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Hardware\usart\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启中断
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(112): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Hardware\usart\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启中断
+..\Hardware\usart\usart.c:                              ^
+..\Hardware\usart\usart.c(114): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\Hardware\usart\usart.c:       USART_Cmd(USART1, ENABLE);                    //使能串口 
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(121): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\Hardware\usart\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\Hardware\usart\usart.c:         ^
+..\Hardware\usart\usart.c(121): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Hardware\usart\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\Hardware\usart\usart.c:                                   ^
+..\Hardware\usart\usart.c(123): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\Hardware\usart\usart.c:              Res =USART_ReceiveData(USART1);//(USART1->DR);  //读取接收到的数据
+..\Hardware\usart\usart.c:                   ^
+..\Hardware\usart\usart.c: ..\Hardware\usart\usart.c: 5 warnings, 9 errors
+..\Hardware\usart\usart.c - 9 Error(s), 5 Warning(s).
+compiling usart.c...
+..\Hardware\usart\usart.c(76): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\Hardware\usart\usart.c:      USART_InitTypeDef USART_InitStructure;
+..\Hardware\usart\usart.c:      ^
+..\Hardware\usart\usart.c(103): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+..\Hardware\usart\usart.c:                                             ^
+..\Hardware\usart\usart.c(104): error:  #20: identifier "USART_StopBits_1" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_StopBits = USART_StopBits_1;
+..\Hardware\usart\usart.c:                                           ^
+..\Hardware\usart\usart.c(105): error:  #20: identifier "USART_Parity_No" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Parity = USART_Parity_No;
+..\Hardware\usart\usart.c:                                         ^
+..\Hardware\usart\usart.c(106): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+..\Hardware\usart\usart.c:                                                      ^
+..\Hardware\usart\usart.c(107): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Hardware\usart\usart.c:                                       ^
+..\Hardware\usart\usart.c(107): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\Hardware\usart\usart.c:      USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Hardware\usart\usart.c:                                                       ^
+..\Hardware\usart\usart.c(109): warning:  #223-D: function "USART_Init" declared implicitly
+..\Hardware\usart\usart.c:       USART_Init(USART1, &USART_InitStructure);
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(112): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Hardware\usart\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启中断
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(112): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Hardware\usart\usart.c:       USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启中断
+..\Hardware\usart\usart.c:                              ^
+..\Hardware\usart\usart.c(114): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\Hardware\usart\usart.c:       USART_Cmd(USART1, ENABLE);                    //使能串口 
+..\Hardware\usart\usart.c:       ^
+..\Hardware\usart\usart.c(121): warning:  #223-D: function "USART_GetITStatus" declared implicitly
+..\Hardware\usart\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\Hardware\usart\usart.c:         ^
+..\Hardware\usart\usart.c(121): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Hardware\usart\usart.c:      if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+..\Hardware\usart\usart.c:                                   ^
+..\Hardware\usart\usart.c(123): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\Hardware\usart\usart.c:              Res =USART_ReceiveData(USART1);//(USART1->DR);  //读取接收到的数据
+..\Hardware\usart\usart.c:                   ^
+..\Hardware\usart\usart.c: ..\Hardware\usart\usart.c: 5 warnings, 9 errors
+..\Hardware\usart\usart.c - 9 Error(s), 5 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\学习资料\stm32\程序\Exti\MDK\Exti.uvproj
+Project File Date:  05/27/2013
+
+<h2>Output:</h2>
+compiling main.c...
+..\USER\main.c(40): error:  #20: identifier "ADC_InitTypeDef" is undefined
+..\USER\main.c:   ADC_InitTypeDef ADC_InitStructure;
+..\USER\main.c:   ^
+..\USER\main.c(41): error:  #20: identifier "DMA_InitTypeDef" is undefined
+..\USER\main.c:   DMA_InitTypeDef DMA_InitStructure;
+..\USER\main.c:   ^
+..\USER\main.c(75): warning:  #223-D: function "DMA_DeInit" declared implicitly
+..\USER\main.c:     DMA_DeInit(DMA1_Channel1);
+..\USER\main.c:     ^
+..\USER\main.c(78): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC;
+..\USER\main.c:                                 ^
+..\USER\main.c(80): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+..\USER\main.c:                                           ^
+..\USER\main.c(81): error:  #20: identifier "DMA_MemoryInc_Disable" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Disable;
+..\USER\main.c:                                       ^
+..\USER\main.c(82): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+..\USER\main.c:                                                ^
+..\USER\main.c(83): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+..\USER\main.c:                                            ^
+..\USER\main.c(84): error:  #20: identifier "DMA_Mode_Circular" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+..\USER\main.c:                                  ^
+..\USER\main.c(85): error:  #20: identifier "DMA_Priority_High" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+..\USER\main.c:                                      ^
+..\USER\main.c(86): error:  #20: identifier "DMA_M2M_Disable" is undefined
+..\USER\main.c:     DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;
+..\USER\main.c:                                 ^
+..\USER\main.c(87): warning:  #223-D: function "DMA_Init" declared implicitly
+..\USER\main.c:     DMA_Init(DMA1_Channel1, &DMA_InitStructure);  
+..\USER\main.c:     ^
+..\USER\main.c(89): warning:  #223-D: function "DMA_Cmd" declared implicitly
+..\USER\main.c:     DMA_Cmd(DMA1_Channel1, ENABLE);
+..\USER\main.c:     ^
+..\USER\main.c(109): error:  #20: identifier "ADC_Mode_Independent" is undefined
+..\USER\main.c:     ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;
+..\USER\main.c:                                  ^
+..\USER\main.c(112): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
+..\USER\main.c:     ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;
+..\USER\main.c:                                              ^
+..\USER\main.c(113): error:  #20: identifier "ADC_DataAlign_Right" is undefined
+..\USER\main.c:     ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+..\USER\main.c:                                       ^
+..\USER\main.c(115): warning:  #223-D: function "ADC_Init" declared implicitly
+..\USER\main.c:     ADC_Init(ADC1, &ADC_InitStructure);
+..\USER\main.c:     ^
+..\USER\main.c(117): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
+..\USER\main.c:     ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_28Cycles5);    
+..\USER\main.c:     ^
+..\USER\main.c(117): error:  #20: identifier "ADC_Channel_14" is undefined
+..\USER\main.c:     ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_28Cycles5);    
+..\USER\main.c:                                    ^
+..\USER\main.c(117): error:  #20: identifier "ADC_SampleTime_28Cycles5" is undefined
+..\USER\main.c:     ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_28Cycles5);    
+..\USER\main.c:                                                       ^
+..\USER\main.c(119): warning:  #223-D: function "ADC_DMACmd" declared implicitly
+..\USER\main.c:     ADC_DMACmd(ADC1, ENABLE);
+..\USER\main.c:     ^
+..\USER\main.c(130): error:  #20: identifier "ADC_Channel_13" is undefined
+..\USER\main.c:     ADC_RegularChannelConfig(ADC2, ADC_Channel_13, 1, ADC_SampleTime_28Cycles5);
+..\USER\main.c:                                    ^
+..\USER\main.c(132): warning:  #223-D: function "ADC_ITConfig" declared implicitly
+..\USER\main.c:     ADC_ITConfig(ADC2, ADC_IT_EOC, ENABLE);
+..\USER\main.c:     ^
+..\USER\main.c(132): error:  #20: identifier "ADC_IT_EOC" is undefined
+..\USER\main.c:     ADC_ITConfig(ADC2, ADC_IT_EOC, ENABLE);
+..\USER\main.c:                        ^
+..\USER\main.c(143): error:  #20: identifier "ADC_Channel_12" is undefined
+..\USER\main.c:     ADC_RegularChannelConfig(ADC3, ADC_Channel_12, 1, ADC_SampleTime_28Cycles5);
+..\USER\main.c:                                    ^
+..\USER\main.c(148): warning:  #223-D: function "ADC_Cmd" declared implicitly
+..\USER\main.c:     ADC_Cmd(ADC1, ENABLE);
+..\USER\main.c:     ^
+..\USER\main.c(151): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
+..\USER\main.c:     ADC_ResetCalibration(ADC1);
+..\USER\main.c:     ^
+..\USER\main.c(153): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
+..\USER\main.c:     while(ADC_GetResetCalibrationStatus(ADC1));
+..\USER\main.c:           ^
+..\USER\main.c(156): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
+..\USER\main.c:     ADC_StartCalibration(ADC1);
+..\USER\main.c:     ^
+..\USER\main.c(158): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
+..\USER\main.c:     while(ADC_GetCalibrationStatus(ADC1));
+..\USER\main.c:           ^
+..\USER\main.c(187): warning:  #223-D: function "ADC_SoftwareStartConvCmd" declared implicitly
+..\USER\main.c:     ADC_SoftwareStartConvCmd(ADC1, ENABLE);
+..\USER\main.c:     ^
+..\USER\main.c: ..\USER\main.c: 13 warnings, 18 errors
+..\USER\main.c - 18 Error(s), 13 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'exti'
+compiling stm32f10x_it.c...
+..\USER\stm32f10x_it.c(157): warning:  #223-D: function "ADC_GetConversionValue" declared implicitly
+..\USER\stm32f10x_it.c:     ADC2ConvertedValue = ADC_GetConversionValue(ADC2);
+..\USER\stm32f10x_it.c:                          ^
+..\USER\stm32f10x_it.c: ..\USER\stm32f10x_it.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+linking...
+.\OBJ\Exti.axf: Error: L6218E: Undefined symbol SystemInit (referred from main.o).
+.\OBJ\Exti.axf: Error: L6218E: Undefined symbol ADC_GetConversionValue (referred from stm32f10x_it.o).
+.\OBJ\Exti.axf: Not enough information to list image symbols.
+.\OBJ\Exti.axf: Finished: 1 information, 0 warning and 2 error messages.
+Target not created
+compiling main.c...
+..\USER\main.c(109): warning:  #223-D: function "Key_Config" declared implicitly
+..\USER\main.c:   Key_Config();
+..\USER\main.c:   ^
+..\USER\main.c: ..\USER\main.c: 1 warning, 0 errors
+..\USER\main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+..\USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'exti'
+linking...
+.\OBJ\Exti.axf: Error: L6218E: Undefined symbol SystemInit (referred from main.o).
+.\OBJ\Exti.axf: Error: L6218E: Undefined symbol ADC_GetConversionValue (referred from stm32f10x_it.o).
+.\OBJ\Exti.axf: Not enough information to list image symbols.
+.\OBJ\Exti.axf: Finished: 1 information, 0 warning and 2 error messages.
+Target not created

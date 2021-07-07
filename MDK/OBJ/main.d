@@ -1,0 +1,19 @@
+.\OBJ\main.o: ..\USER\main.c
+.\OBJ\main.o: ..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\OBJ\main.o: ..\CMSIS\CM3\CoreSupport\core_cm3.h
+.\OBJ\main.o: D:\Keil for ARM\ARM\ARMCC\bin\..\include\stdint.h
+.\OBJ\main.o: ..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\OBJ\main.o: ..\USER\stm32f10x_conf.h
+.\OBJ\main.o: ..\LIB\inc\stm32f10x_exti.h
+.\OBJ\main.o: ..\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\OBJ\main.o: ..\LIB\inc\stm32f10x_gpio.h
+.\OBJ\main.o: ..\LIB\inc\stm32f10x_rcc.h
+.\OBJ\main.o: ..\LIB\inc\stm32f10x_tim.h
+.\OBJ\main.o: ..\LIB\inc\stm32f10x_usart.h
+.\OBJ\main.o: ..\LIB\inc\misc.h
+.\OBJ\main.o: ..\Hardware\led\led.h
+.\OBJ\main.o: ..\Hardware\key\key.h
+.\OBJ\main.o: ..\Hardware\TFT\tft.h
+.\OBJ\main.o: ..\LIB\SYSTEM\delay\delay.h
+.\OBJ\main.o: ..\LIB\SYSTEM\sys\sys.h
+.\OBJ\main.o: ..\Hardware\Timer\timer.h
